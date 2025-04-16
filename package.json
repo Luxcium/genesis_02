@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint:md": "markdownlint \"**/*.md\"",
+    "lint": "pnpm run lint:md && tsc --noEmit"
   },
   "keywords": [],
   "author": "",
